@@ -9,10 +9,17 @@
           android:title="@string/action_search"
           app:showAsAction="ifRoom" />
     
+    <item android:id="@+id/action_new"
+          android:icon="@drawable/ic_action_new"
+          android:title="@string/action_new"
+          app:showAsAction="ifRoom"
+           />
+    
+    
     <item android:id="@+id/action_camera"
        	android:icon="@drawable/ic_action_camera"
        	android:title="@string/action_camera"
-       	app:showAsAction="ifRoom" />
+       	app:showAsAction="never" />
     
     <item
         android:id="@+id/action_settings"

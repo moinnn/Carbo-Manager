@@ -4,13 +4,15 @@
     <string name="app_name">Carbo App</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="edit_message">Enter a message</string>
-    <string name="button_send">Send</string>
+    <string name="edit_aliment">Enter an aliment</string>
+    <string name="button_search">Search</string>
     <string name="title_activity_display_message">My Message</string>
     <string name="action_search">Search</string>
     <string name="action_camera">Camera</string>
-     <string name="aliment_description">Picture of the aliment</string>
+    <string name="action_new">New</string>
+    <string name="aliment_description">Picture of the aliment</string>
     <string name="rations_in_picture">%1$d rations</string>
+    <string name="aliment_not_found">%1$s not found</string>
     
     <string name="grams_per_ration">1 Ration of %1$s = %1$d grams</string>
    

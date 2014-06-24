@@ -30,6 +30,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.dualnot.ignacio.carboapp.MainActivity" />
         </activity>
+
+        
     </application>
 
 </manifest>
