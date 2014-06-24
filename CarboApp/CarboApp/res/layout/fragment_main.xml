@@ -2,16 +2,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
     tools:context="com.dualnot.ignacio.carboapp.MainActivity$PlaceholderFragment" >
-    <EditText android:id="@+id/edit_message"
-        android:layout_width="0dp"
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:hint="@string/edit_message" />
-    <Button
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/edit_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/edit_message"
+            android:layout_weight="1" >
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="sendMessage"
+            android:text="@string/button_send" />
+
+    </LinearLayout>
+    	
+    
+    <TextView
+        android:id="@+id/grams_per_ration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_send"
-        android:onClick="sendMessage" />
+        android:textSize="20sp"
+        android:text="@string/grams_per_ration" />
+    
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/aliment_description"
+        android:src="@drawable/no_image_320x200" />
+    
+     <TextView
+         android:id="@+id/rations_in_picture"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="@string/rations_in_picture"
+         android:textSize="20sp" />
+
 </LinearLayout>

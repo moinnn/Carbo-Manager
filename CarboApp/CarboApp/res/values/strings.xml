@@ -9,5 +9,9 @@
     <string name="title_activity_display_message">My Message</string>
     <string name="action_search">Search</string>
     <string name="action_camera">Camera</string>
-
+     <string name="aliment_description">Picture of the aliment</string>
+    <string name="rations_in_picture">%1$d rations</string>
+    
+    <string name="grams_per_ration">1 Ration of %1$s = %1$d grams</string>
+   
 </resources>
