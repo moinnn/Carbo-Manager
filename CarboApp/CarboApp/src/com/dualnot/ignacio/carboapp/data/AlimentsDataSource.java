@@ -52,11 +52,13 @@ public class AlimentsDataSource {
 		cursor.close();
 		return newAliment;
 	}
+	
 	public void deleteAliment(Aliment aliment) {
 		long id = aliment.getId();
 		System.out.println("Aliment deleted with id: " + id);
 		database.delete(AlimentEntry.TABLE_NAME, AlimentEntry._ID + " = " + id, null);
 	}
+	
 	public List<Aliment> getAllAliments(){
 		List<Aliment> aliments = new ArrayList<Aliment>();
 		Cursor cursor = this.database.query(AlimentEntry.TABLE_NAME, this.allColumns, null, null, null, null, null);
@@ -69,6 +71,7 @@ public class AlimentsDataSource {
 		cursor.close();
 		return aliments;
 	}
+	
 	private Aliment cursorToAliment(Cursor cursor){
 		Aliment aliment = new Aliment();
 		aliment.setId(cursor.getLong(0));
@@ -77,5 +80,7 @@ public class AlimentsDataSource {
 		aliment.setRations_in_picture(cursor.getInt(3));
 		return aliment;
 	}
+	
+	
 
 }

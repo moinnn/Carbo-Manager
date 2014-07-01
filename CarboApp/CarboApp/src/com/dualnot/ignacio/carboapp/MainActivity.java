@@ -38,6 +38,7 @@ public class MainActivity extends ActionBarActivity {
 		} else {
 			showAliment(aliment);
 		}
+		alimentsData.close();
 	}
 	private Aliment search(String alimentName,List<Aliment> aliments){
 		for (Aliment aliment : aliments) {
@@ -130,7 +131,7 @@ public class MainActivity extends ActionBarActivity {
 	}
 	
 	public void openNew(){
-		Intent intent = new Intent(this, DisplayMessageActivity.class);
+		Intent intent = new Intent(this, AddAlimentActivity.class);
 		startActivity(intent);
 	}
 	
